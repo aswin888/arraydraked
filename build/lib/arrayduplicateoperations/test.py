@@ -1,9 +1,3 @@
-def arraycheck(arr):
-	if(len(arr) == len(set(arr))):
-		return True
-	else:
-		return False
-
 def dictCreator(arr):
 	dct = {}
 	for e in arr:
@@ -12,3 +6,6 @@ def dictCreator(arr):
 		else:
 			dct[e] = 1
 	return dct
+
+arr = ['a','a','b','c','c']
+print(dictCreator(arr))
